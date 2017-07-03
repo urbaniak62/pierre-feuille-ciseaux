@@ -1,28 +1,36 @@
+for (tour=1; tour<=6; tour++){
+
 var user=prompt("pierre feuille ou ciseaux");
 var ordi= Math.random();
-var score=("score");
-var tour=parseInt(" ");
+var scoreO;
+var scoreU;
+var tour;
 
-function comparaison(user,ordi){
-  if (user==ordi) {
-    prompt("egalité");
-  }if(user==pierre && ordi==ciseau){
-    prompt("joueur gagne");
-    }
-    else {
-      prompt("ordi gagne");
-    }
-    if(user==feuille && ordi==ciseau){
-      prompt("ordi gagne");
+
+if (ordi<=0.33){
+  ordi=("pierre")
+}if (ordi>0.34 && ordi>0.66){
+    ordi=("feuille");
     }
     else{
-      prompt("joueur gagne");
+      ordi=("ciseaux");
     }
-    if(user==ciseaux && ordi==pierre){
-      prompt("ordi gagne");
-    }
-    else{
-      prompt("joueur gagne");
-    }
-  }
-  console.log(comparaison);
+      alert(ordi);
+
+  if (user===ordi) {
+    alert("egalité");
+      }if((user==="pierre" && ordi==="ciseaux")
+      || (user==="ciseaux" && ordi==="feuille")
+      || (user==="feuille" && ordi==="pierre")){
+        alert("joueur gagne ");
+        if(scoreU=0; scoreU<=3; scoreU++){
+        prompt("ton score est de :" + scoreU + );}
+        }
+        else {
+          console.log(ordi);
+          alert("ordi gagne");
+          parseInt(prompt("le score de l' ordi est : " + scoreO+=1));
+        }
+        alert(tour);
+
+}
