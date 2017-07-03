@@ -1,36 +1,43 @@
-for (tour=1; tour<=6; tour++){
 
-var user=prompt("pierre feuille ou ciseaux");
-var ordi= Math.random();
-var scoreO;
-var scoreU;
+
+
+var scoreO=0;
+var scoreU=0;
 var tour;
 
+while(scoreO!=3 && scoreU!=3){
 
-if (ordi<=0.33){
+  var user=prompt("pierre feuille ou ciseaux");
+  var ordi= Math.random();
+
+if (ordi<=0.34){
   ordi=("pierre")
-}if (ordi>0.34 && ordi>0.66){
+}
+  if (ordi<=0.67){
     ordi=("feuille");
     }
-    else{
+      else{
       ordi=("ciseaux");
     }
-      alert(ordi);
+      alert("l'ordi à choisi : " + ordi);
 
   if (user===ordi) {
     alert("egalité");
-      }if((user==="pierre" && ordi==="ciseaux")
+      }
+
+    if((user==="pierre" && ordi==="ciseaux")
       || (user==="ciseaux" && ordi==="feuille")
       || (user==="feuille" && ordi==="pierre")){
         alert("joueur gagne ");
-        if(scoreU=0; scoreU<=3; scoreU++){
-        prompt("ton score est de :" + scoreU + );}
-        }
-        else {
-          console.log(ordi);
-          alert("ordi gagne");
-          parseInt(prompt("le score de l' ordi est : " + scoreO+=1));
-        }
-        alert(tour);
 
+        alert("ton score est de :" + scoreU++);
+
+          }
+        else {
+          alert("ordi gagne");
+
+        }
+        alert("le score de l' ordi est : " + scoreO++);
 }
+
+alert ("ordinateur" + scoreO +""+""+"vous" +scoreU +"");
