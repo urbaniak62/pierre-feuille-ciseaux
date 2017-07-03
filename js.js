@@ -3,7 +3,7 @@
 
 var scoreO=0;
 var scoreU=0;
-var tour;
+
 
 while(scoreO!=3 && scoreU!=3){
 
@@ -13,7 +13,7 @@ while(scoreO!=3 && scoreU!=3){
 if (ordi<=0.34){
   ordi=("pierre")
 }
-  if (ordi<=0.67){
+else  if (ordi<=0.67 && ordi>0.34){
     ordi=("feuille");
     }
       else{
@@ -25,19 +25,17 @@ if (ordi<=0.34){
     alert("egalité");
       }
 
-    if((user==="pierre" && ordi==="ciseaux")
+  else  if((user==="pierre" && ordi==="ciseaux")
       || (user==="ciseaux" && ordi==="feuille")
       || (user==="feuille" && ordi==="pierre")){
-        alert("joueur gagne ");
-
-        alert("ton score est de :" + scoreU++);
-
-          }
+        scoreU++ ;
+        alert("joueur gagne, ton score est : " + scoreU + " et le score de l'ordinateur est : " + scoreO );
+      }
         else {
-          alert("ordi gagne");
-
+          scoreO++;
+          alert("ordi gagne, son score est : " + scoreO + " et le score du joueur est : " + scoreU);
         }
-        alert("le score de l' ordi est : " + scoreO++);
+
 }
 
-alert ("ordinateur" + scoreO +""+""+"vous" +scoreU +"");
+ alert ("ordinateur" + scoreO +""+"vous" +scoreU +"");
