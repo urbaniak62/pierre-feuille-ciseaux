@@ -1,9 +1,6 @@
 
-
-
 var scoreO=0;
 var scoreU=0;
-
 
 while(scoreO!=3 && scoreU!=3){
 
