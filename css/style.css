@@ -1,0 +1,54 @@
+header{
+  display: flex;
+    justify-content: center space-around;
+    background-color: skyblue;
+}
+h1{
+  font-family: 'Indie Flower', cursive;
+  flex-wrap: wrap;
+  display: flex;
+  /*justify-content: center;*/
+  font-size: 1.7em;
+
+
+
+}
+button{
+  width:auto;
+  height:auto;
+
+}
+#contain{
+
+
+
+
+
+}
+#img{
+  width: 80%;
+  display: flex;
+  background-color: silver;
+  height: auto;
+  display: flex;
+  justify-content: center space-around;
+  margin-left: 10%;
+
+
+}
+img{
+  width: 5em;
+  height: 5em;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+
+}
+#ordi{
+  width: 42%;
+  height: auto;
+  border-left: 1 px solid black;
+  display: flex;
+
+}

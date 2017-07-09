@@ -1,38 +1,39 @@
-
 var scoreO=0;
 var scoreU=0;
 
 while(scoreO!=3 && scoreU!=3){
 
-  var user=prompt("pierre feuille ou ciseaux");
+  var user=prompt("comment t'appel tu..?");
   var ordi= Math.random();
 
 if (ordi<=0.34){
   ordi=("pierre")
+  document.getElementById("pierreO").src="img/pierre.png";
 }
 else  if (ordi<=0.67 && ordi>0.34){
     ordi=("feuille");
+    document.getElementById("feuilleO").src="img/feuille.png";
     }
       else{
-      ordi=("ciseaux");
+      ordi=("ciseaux")
+      document.getElementById("ciseauxO").src="img/ciseaux.png";
     }
-      alert("l'ordi à choisi : " + ordi);
 
   if (user===ordi) {
-    alert("egalité");
+    alert=("egalité..!!.");
       }
 
   else  if((user==="pierre" && ordi==="ciseaux")
       || (user==="ciseaux" && ordi==="feuille")
       || (user==="feuille" && ordi==="pierre")){
         scoreU++ ;
-        alert("joueur gagne, ton score est : " + scoreU + " et le score de l'ordinateur est : " + scoreO );
+
       }
         else {
           scoreO++;
-          alert("ordi gagne, son score est : " + scoreO + " et le score du joueur est : " + scoreU);
+
         }
-
-}
-
- alert ("ordinateur" + scoreO +""+"vous" +scoreU +"");
+        document.getElementById("user").innerHTML=("nom : ") + user;
+        document.getElementById("scoreU").innerHTML=("score = ") + scoreU;
+        document.getElementById("scoreO").innerHTML=("score = ") + score0;
+      }
