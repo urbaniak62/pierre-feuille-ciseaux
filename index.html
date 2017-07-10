@@ -12,37 +12,31 @@
       <h1>PIERRE-FEUILLE-CISEAUX</h1>
     </header>
     <hr>
-    <!---contain----------------->
-    <!-- <div id="contain">  -->
 
       <section id="img">
-        <button type="button" name="button"><img src="img/pierre.jpg" id="pierre" alt="pierre"></button>
-        <button type="button" name="button"><img src="img/feuille.jpg" id="feuille" alt="feuille"></button>
-        <button type="button" name="button"><img src="img/ciseaux.jpg" id="ciseaux" alt="ciseaux"></button>
+        <button onclick="comparer('pierre')" type="button" name="button"><img src="img/pierre.jpg" id="pierre" alt=""></button>
+        <button onclick="comparer('feuille')" type="button" name="button"><img src="img/feuille.jpg" id="feuille" alt=""></button>
+        <button onclick="comparer('ciseaux')" type="button" name="button"><img src="img/ciseaux.jpg" id="ciseaux" alt=""></button>
       </section>
-      </section>
-
 
       <div id="ordi">
-        <span id="pierreO"></span>
-        <span id="feuilleO"></span>
-        <span id="ciseauxO"></span>
+        <img src="" id="pierreO" alt="pierre">
+        <img src="" id="feuilleO" alt="feuille">
+        <img src="" id="ciseauxO" alt="ciseaux">
       </div>
-    <!-- </div> -->
+
       <footer>
         <div class="Joueur">
           <span id="user"></span><br>
           <span id="scoreU"></span>
         </div>
 
-        <div>
-          <span>computer</span>
+        <div class="computer">
+          <span>computer</span><br>
           <span id="scoreO"></span>
         </div>
 
       </footer>
-
-
       <script src="js/js.js"></script>
   </body>
 </html>

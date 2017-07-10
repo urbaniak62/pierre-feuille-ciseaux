@@ -1,39 +1,43 @@
 var scoreO=0;
 var scoreU=0;
+var user;
+var nom=prompt("comment t'appel tu..?");
+document.getElementById("user").innerHTML=("nom : ") + nom;
 
-while(scoreO!=3 && scoreU!=3){
-
-  var user=prompt("comment t'appel tu..?");
+  function comparer(userChoice) {
+    user=userChoice;
+    console.log(user);
+/*----------------choix ordi-------------*/
   var ordi= Math.random();
 
-if (ordi<=0.34){
-  ordi=("pierre")
-  document.getElementById("pierreO").src="img/pierre.png";
-}
-else  if (ordi<=0.67 && ordi>0.34){
-    ordi=("feuille");
-    document.getElementById("feuilleO").src="img/feuille.png";
-    }
-      else{
-      ordi=("ciseaux")
-      document.getElementById("ciseauxO").src="img/ciseaux.png";
-    }
 
+  if (ordi<=0.34){
+  ordi="pierre";
+  document.getElementById("pierreO").src="img/pierre.jpg";
+}
+  else  if (ordi<=0.67 && ordi>0.34){
+    ordi="feuille";
+    document.getElementById("feuilleO").src="img/feuille.jpg";
+    }
+    else{
+      ordi="ciseaux";
+      document.getElementById("ciseauxO").src="img/ciseaux.jpg";
+    }
+    console.log(ordi);
+    /*---------------choix user --------------------------*/
   if (user===ordi) {
     alert=("egalité..!!.");
       }
 
-  else  if((user==="pierre" && ordi==="ciseaux")
+   else  if((user==="pierre" && ordi==="ciseaux")
       || (user==="ciseaux" && ordi==="feuille")
       || (user==="feuille" && ordi==="pierre")){
         scoreU++ ;
-
+        document.getElementById("scoreU").innerHTML=("score = ") + scoreU;
       }
+
         else {
           scoreO++;
-
+          document.getElementById("scoreO").innerHTML=("score = ") + scoreO;
         }
-        document.getElementById("user").innerHTML=("nom : ") + user;
-        document.getElementById("scoreU").innerHTML=("score = ") + scoreU;
-        document.getElementById("scoreO").innerHTML=("score = ") + score0;
       }

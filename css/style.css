@@ -9,22 +9,8 @@ h1{
   display: flex;
   /*justify-content: center;*/
   font-size: 1.7em;
-
-
-
 }
-button{
-  width:auto;
-  height:auto;
 
-}
-#contain{
-
-
-
-
-
-}
 #img{
   width: 80%;
   display: flex;
@@ -40,15 +26,35 @@ img{
   width: 5em;
   height: 5em;
   flex-wrap: wrap;
-
   justify-content: space-around;
 
 
 }
 #ordi{
-  width: 42%;
-  height: auto;
-  border-left: 1 px solid black;
+  width: 80%;
+  height: 90px;
+  background-color: skyblue;
+  margin-top: 10px;
+  justify-content: center space-around;
+  margin-left: 10%;
+}
+footer{
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: silver;
+  margin: 10px auto;
+  padding-left: 10%;
+
+}
+.joueur span{
+  width: 40%;
+  margin-left: 10%;
+
+}
+.computer {
+  width: 40%;
+  margin-left: 60%;
 
 }
