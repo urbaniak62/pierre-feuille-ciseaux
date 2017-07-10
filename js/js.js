@@ -13,15 +13,15 @@ document.getElementById("user").innerHTML=("nom : ") + nom;
 
   if (ordi<=0.34){
   ordi="pierre";
-  document.getElementById("pierreO").src="img/pierre.jpg";
+  document.getElementById("adv").src="img/pierre.jpg";
 }
   else  if (ordi<=0.67 && ordi>0.34){
     ordi="feuille";
-    document.getElementById("feuilleO").src="img/feuille.jpg";
+    document.getElementById("adv").src="img/feuille.gif";
     }
     else{
       ordi="ciseaux";
-      document.getElementById("ciseauxO").src="img/ciseaux.jpg";
+      document.getElementById("adv").src="img/ciseau.gif";
     }
     console.log(ordi);
     /*---------------choix user --------------------------*/
@@ -34,7 +34,9 @@ document.getElementById("user").innerHTML=("nom : ") + nom;
       || (user==="feuille" && ordi==="pierre")){
         scoreU++ ;
         document.getElementById("scoreU").innerHTML=("score = ") + scoreU;
+        console.log(scoreU);
       }
+
 
         else {
           scoreO++;
