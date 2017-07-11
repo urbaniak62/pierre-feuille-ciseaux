@@ -1,24 +1,36 @@
+body{
+  background: url(../img/bacgroun.jpg) no-repeat center center ;
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+
+  width: auto;
+  height:100vh;
+  margin: 0 auto;
+
+}
 header{
   display: flex;
-    justify-content: center space-around;
-    background-color: skyblue;
+    justify-content: center ;
+  
 }
 h1{
   font-family: 'Indie Flower', cursive;
   flex-wrap: wrap;
   display: flex;
-  /*justify-content: center;*/
+  color: #0066ff;
   font-size: 1.7em;
 }
 
 #img{
-  width: 80%;
+  width: 100%;
   display: flex;
-  background-color: silver;
+  /*background-color: silver;*/
   height: auto;
   display: flex;
-  justify-content: center space-around;
-  margin-left: 10%;
+  justify-content: space-around;
+
+  opacity: 0.9;
 
 
 }
@@ -30,31 +42,40 @@ img{
 
 
 }
+#adv{
+  width: 9em;
+  height: 9em;
+
+}
 #ordi{
-  width: 80%;
+  width: 100%;
   height: 90px;
-  background-color: skyblue;
+  display: flex;
+  /*background-color: skyblue;*/
   margin-top: 10px;
-  justify-content: center space-around;
-  margin-left: 10%;
+  justify-content: space-around;
+
+  margin-bottom: 15%;
 }
 #adv{
-  margin-left: 35%;
+  border-radius: 100px;
   padding-top: 2%;
 }
 footer{
   display: flex;
   flex-direction: row;
   justify-content:  center space-between;
-  width: 100%;
-  height: 100px;
-  background-color: silver;
+  width: 80%;
+  height: 70px;
+  background-color: white;
   margin: 10px auto;
   padding-left: 10%;
+  padding-top: 10px;
+  opacity: 0.7;
 }
   .computer {
     margin-left: 10%;
 }
 .computer {
-margin-right: 25%;
+margin-right: 24%;
 }

@@ -4,6 +4,7 @@ var user;
 var nom=prompt("comment t'appel tu..?");
 document.getElementById("user").innerHTML=("nom : ") + nom;
 
+
   function comparer(userChoice) {
     user=userChoice;
     console.log(user);
@@ -23,9 +24,9 @@ document.getElementById("user").innerHTML=("nom : ") + nom;
       ordi="ciseaux";
       document.getElementById("adv").src="img/ciseau.gif";
     }
-    console.log(ordi);
+
     /*---------------choix user --------------------------*/
-  if (user===ordi) {
+  if (user==ordi) {
     alert=("egalité..!!.");
       }
 
@@ -42,4 +43,16 @@ document.getElementById("user").innerHTML=("nom : ") + nom;
           scoreO++;
           document.getElementById("scoreO").innerHTML=("score = ") + scoreO;
         }
+        if (scoreU==3) {
+          document.getElementById("adv").src="img/win.gif";
+          scoreO=0;
+          scoreU=0;
+        }
+        else if (scoreO==3) {
+          document.getElementById('adv').src="img/loose.gif";
+            scoreO=0;
+            scoreU=0;
+
+        }
+
       }
